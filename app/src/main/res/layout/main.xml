@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.julianna.mysecondapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Text_layaut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="00"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            tools:layout_editor_absoluteX="189dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Text_layaut"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/butfenv"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="%"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butsqrt"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:elevation="0dp"
+                    android:onClick="onClickOperator"
+                    android:text="√"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butpow"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="^"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butdiv"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="/"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/but7"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="7"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but8"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="8"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but9"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="9"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butmult"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/but4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="4"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but5"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:elevation="0dp"
+                    android:onClick="onClick"
+                    android:text="5"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="6"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butmin"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="-"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/but1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="1"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="2"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="3"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butadd"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickOperator"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/butc"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickClear"
+                    android:text="C"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but0"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butdot"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:text="."
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/butequa"
+                    style="@android:style/Widget.Holo.Button"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClickEqual"
+                    android:text="="
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
